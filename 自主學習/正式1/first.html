@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" href="first.css" />
+    <link rel = "stylesheet" href="first.js" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .navbar a {
+        float: left;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      .dropdown .dropbtn {
+        cursor: pointer;
+        font-size: 20px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      
+      .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+        background-color: rgb(144, 182, 230);
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      .show {
+        display: block;
+      }
+      </style>
+   
+</head>
+<body>
+  <!-- <ul> -->
+    <!-- <li class="dropdown"> -->
+      <!-- <a href="javascript:void(0)" class="dropbtn">心得</a> -->
+      <!-- <div class="dropdown-content"> -->
+        <!-- <a href="#">21205郭家妤</a> -->
+        <!-- <a href="#">21206陳庭蓁</a> -->
+      <!-- </div> -->
+    <!-- </li> -->
+  <!-- </ul> -->
+
+<div class="header">
+  <h1 style="font-size: 65px;">自主學習</h1>
+  <p style="font-size: 20px;margin-top: -30px;margin-bottom: 25px;">網頁程式 ( HTML , CSS , Javascript ) 的認識與實作</p>
+</div>
+
+<div class="topnav" style="font-size: 20px;">
+
+    <a class="active" href="#"><i class="fa fa-fw fa-home"></i></a> 
+    <div class="#1">
+    <a href="#1">研究動機</a></div>
+    <div class="#2">
+    <a href="#2">研究目的</a></div>
+    <div class="#3">
+    <a href="#3">遭遇困難&解決辦法</a></div>
+    <div class="#4">
+    <a href="#4">回饋與反思</a></div>
+    <div class="#5">
+    <a href="#5">HTML介紹</a></div>
+    <div class="#6">
+    <a href="#6">CSS介紹</a></div>
+    <div class="#7">
+    <a href="#7">Javascript介紹</a></div>
+
+
+
+
+<div class="navbar">
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction(event,'myDropdown')" id="defaultOpen">心得</button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="#">21205郭家妤</a>
+    <a href="#">21206陳庭蓁</a>
+
+  </div>
+  </div> 
+</div>
+
+</div>
+
+    <!-- <div id="myDropdown" class="tabcontent"> -->
+  <!-- <h3>心得</h3> -->
+  <!-- <p>London is the capital city of England.</p> -->
+<!-- </div> -->
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1>研究動機</h1>
+      <!-- <h5>Title description, Dec 7, 2017</h5> -->
+      <div class="fakeimg" style="height:65px;"><b style="font-size: 20px;">之所以想要研究網頁程式的原因是因為在偶然得機會下認識了網頁程式，進而產生興趣，於是決定當成自主學習的研究目標。</b>
+      </div>
+
+    <div class="card1">
+      <h1>研究目的</h1>
+      <!-- <h5>Title description, Dec 7, 2017</h5> -->
+      <div class="fakeimg" style="height:65px;"><b style="font-size: 20px;">學習到了HTML，CSS，Javascript程式的概念 , 並能自己撰寫出一完整的網頁。</b>
+      </div>
+      <!-- <p>Some text..</p> -->
+      <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+    </div>
+
+    <div class="card2">
+      <h1>遭遇困難與解決辦法</h1>
+      <!-- <h5>Title description, Dec 7, 2017</h5> -->
+      <div class="fakeimg" style="height:180px;"><b style="font-size: 20px;"><li><u>遭遇困難</u>：原本我所預期的情況是我能如期撰寫出一個網頁程式 , 但是在計畫開始執行的時候我發現自己在時間內所學到的知識不足以寫出一個好看的網頁 , 但如果把接下來自主學習的時間都拿來加強不足的部分 , 將會拖延到整體的進度。</li></br><li><u>解決方法</u>：為了能在有限時間內完成滿意的成果 , 我採取的方式是運用每天放學回家得休息時間來加強學習 , 並積極詢問程式能力強的同學 , 而最後我們也如期完成目標。至於原本的計畫我們決定照常進行 , 不會去作任何調整。</li></b>
+      </div>
+      <!-- <p>Some text..</p> -->
+      <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+    </div>
+
+    <div class="card3">
+      <h1>回饋與反思</h1>
+      <!-- <h5>Title description, Dec 7, 2017</h5> -->
+      <div class="fakeimg" style="height:100px;"><b style="font-size: 20px;">我認為這次的計畫因為有如期完成 , 加上有做出滿意的成果 , 所以是十分成功的。至於未來我認為可以藉由延續研究官網未學習完的部分來增加網頁程式的能力，也可已針對單一程式去進行深入的研究。</b>
+      </div>
+      <!-- <p>Some text..</p> -->
+      <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+    </div>
+
+    <div class="card4">
+      <h1>html網頁介紹</h1>
+      <!-- <h5>Title description, Dec 7, 2017</h5> -->
+      <div class="fakeimg" style="height:100px;"><b style="font-size: 20px;"><a href="w3c/index.html">html網站架構</br><a href="w3c/基本學習內容.html">html基本學習內容</a></b>
+      </div>
+      <!-- <p>Some text..</p> -->
+      <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+    </div>
+
+    <div class="card4">
+      <h1>CSS網頁介紹</h1>
+      <!-- <h5>Title description, Dec 7, 2017</h5> -->
+      <div class="fakeimg" style="height:70px;"><b style="font-size: 20px;"><a href="css.html">CSS基本學習內容</a></b>
+      </div>
+      <!-- <p>Some text..</p> -->
+      <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+    </div>
+
+    <div class="card5">
+      <h1>21206陳庭蓁</h1>
+      <!-- <h5>Title description, Dec 7, 2017</h5> -->
+      <div class="fakeimg" style="height:100px;"><b style="font-size: 20px;">雖然中途才打算做這個主題,也沒太多時間準備，所以只能局部的探討，本來以為基本不會太難，但後來製作網頁時才發現要牽更難的程式程式。我認為可以延續這次的主題，把尚未習到的地方補足。</b>
+      </div>
+      <!-- <p>Some text..</p> -->
+      <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+    </div>
+
+    <div class="card6">
+      <h1>21205郭家妤</h1>
+      <!-- <h5>Title description, Dec 7, 2017</h5> -->
+      <div class="fakeimg" style="height:120px;"><b style="font-size: 20px;">這次的成果雖然沒有預期的好，但是我認為能在中途改成這個主題並作出網頁程式是十分大的收穫。也由於時間相當不充足加上對於網頁程式希望學習到更多，我認為未來可以藉由延續研究官網未學習完的部分來增加網頁程式的能力，或針對單一程式去進行深入的研究。</b>
+      </div>
+      <!-- <p>Some text..</p> -->
+      <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+    </div>
+
+    </div>
+</div>
+    <!-- <div class="card"> -->
+      <!-- <h2>TITLE HEADING</h2> -->
+      <!-- <h5>Title description, Sep 2, 2017</h5> -->
+      <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+      <!-- <p>Some text..</p> -->
+      <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+    <!-- </div> -->
+  <!-- </div> -->
+  <!-- <div class="rightcolumn"> -->
+    <!-- <div class="card"> -->
+      <!-- <h2>About Me</h2> -->
+      <!-- <div class="fakeimg" style="height:100px;">Image</div> -->
+      <!-- <p>Some text about me in culpa qui officia deserunt mollit anim..</p> -->
+    <!-- </div> -->
+    <!-- <div class="card"> -->
+      <!-- <h3>Popular Post</h3> -->
+      <!-- <div class="fakeimg"><p>Image</p></div> -->
+      <!-- <div class="fakeimg"><p>Image</p></div> -->
+      <!-- <div class="fakeimg"><p>Image</p></div> -->
+    <!-- </div> -->
+    <!-- <div class="card"> -->
+      <!-- <h3>Follow Me</h3> -->
+      <!-- <p>Some text..</p> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </div> -->
+
+
+<!-- <div class="footer" > -->
+  <!-- <h2>回首頁</h2> -->
+
+</div>
+
+</body>
+</html>
+
+

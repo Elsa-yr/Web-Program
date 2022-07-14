@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en"style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自主學習主頁</title>
+    <link rel = "stylesheet" href="firstpage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script  type="text/javascript" src="firstpage.js"></script>
+</head>
+
+<body>   
+
+  <div id="main" style="  transition: margin-left 2.5s;">
+    <h6 class="h11"><b>自主學習</b></h6>
+    <p style="text-align: center;color: rgba(165, 42, 42, 0.486);font-size: 20px;margin-bottom: 40px;width: auto;"><b>21205郭家妤&emsp;&emsp;21206陳庭蓁</b></p>
+  </div>
+
+  <!-- --------------------側邊導航欄------------------------- -->
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#1" onclick="openCity('主頁')">主頁</a>
+    <a href="#2" class="dropdown-btn" style="display: block;">程式介紹 <i class="fa fa-caret-down"></i></a>
+      <div class="dropdown-container">
+        <a href="#3" onclick="openCity('HTML')" style=" background-color: #262626b1;">HTML</a>
+        <a href="#4" onclick="openCity('CSS')" style=" background-color: #262626b1;">CSS</a>
+        <a href="#5" onclick="openCity('Javascript')" style=" background-color: #262626b1;">Javascript</a>
+      </div>
+
+    <!-- <a href="#6" onclick="openCity('學習歷程')">學習歷程</a> -->
+    <a href="#7" onclick="openCity('舊版網頁')">舊版網頁</a>
+    <a href="https://github.com/Elsa-yr/Web-Program
+    ">Github</a>
+  </div>
+
+    <!-- ----------------stick導航欄------------------------ -->
+
+  <div id="w3-bar">
+    <!-- <ul> -->
+      <span class="w3-bar-item">自主學習成果展示 - 網頁程式延伸研究</span>
+      <span style="font-size:30px;cursor:pointer;color: aliceblue;float: right;" onclick="openNav()">&#9776;</span>
+        <!-- <li><a href="#news">News</a></li> -->
+        <!-- <li><a href="#contact">Contact</a></li> -->
+        <!-- <li><a href="#about">About</a></li> -->
+        <!-- <li style="float:right"><a href="#about">About</a></li> -->
+    <!-- </ul> -->
+  </div>
+
+  <!-- -------------------主頁-------------------------- -->
+
+  <div style="padding:20px;background-color:rgb(255, 255, 255);text-align: center;">
+   
+    <!-- ---------- -->
+
+    <div id="主頁" class="link">
+      <br/>
+      <h1 style="margin: 3%;">成員：</h1>
+      <!-- <hr/> -->
+      <br/>      
+
+      <div class="成員" style="width: 100%;">
+
+        <div class="w3-card-4" style="margin-left: 3%; float: left; width:45%">
+          
+          <header class="w3-container w3-light-grey">
+              <h3>郭家妤</h3>
+          </header>
+
+          <div class="w3-container">
+            <h5 >負責範圍</h5>
+            <hr/>
+            <p style="font-size:110%">網頁程式的HTML,     CSS及少量Javascript</p><br>
+          </div>
+
+        </div>
+
+      
+        <div class="w3-card-4" style="margin-right: 3%; float: right; width:45%">
+          <header class="w3-container w3-light-grey">
+              <h3>陳庭蓁</h3>
+          </header>
+          <div class="w3-container" >
+            <h5>負責範圍</h5>
+            <hr/>
+            <p style="font-size:110%">網頁程式大部分Javascript以及內文的撰寫</p><br>
+          </div>
+
+        </div>
+
+      </div>
+
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+      <h1>製作動機：</h1>
+      <p style="margin: 2%;font-size: 20px">由於在上學期未做出滿意的網頁，加上對於網頁程式的熱情不減反增，因此毅然決定繼續學習網頁程式，並做出滿意的成品。</p>
+
+      <br/><br/><br/><br/>
+      <br/>
+      <h1>目的：</h1>
+      <p style="margin: 2%;font-size: 20px">我們希望能藉由這次的學習來加深對網頁的興趣，並對上一次成果不足的部分作修正，最後也希望未來在瀏覽其它網頁時能產生共鳴。
+      </p>
+
+      <br/><br/><br/><br/>
+      <br/>
+      <h1 style="margin: 0; margin: 3%;">原版網頁影片：</h1>
+      <video src="y2mate.com - 自主學習  網頁的認識與實作影片網頁瀏覽_480p.mp4" controls autoplay muted loop style="z-index: 11" width="80%">瀏覽器無法載入影片</video>
+  
+      <br/><br/><br/><br/>
+
+    </div>
+  </div>
+
+  <!-- -------------------HTML-------------------------- -->
+<div id="html1" style="background-color:rgb(255, 255, 255);text-align: center;">
+  <div id="HTML" class="link" style="display:none;padding:20px">
+    <h1 style="margin: 3%;font-size: 300%;">HTML</h1>
+    <br/>
+
+    <!-- ---------------HTML簡介------------------------------ -->
+    <hr/>
+    <h2>HTML簡介：</h2>
+    <div style="background-color: cadetblue;">
+      <br/>
+      <p style="font-size:20px">HTML是一種網頁使用的語言，可以用來編輯設計出網頁，也可以在網頁中加入表格、表單、圖片、文字、連結、程式等項目來豐富網頁內容。</p>
+      <br/>
+    </div>
+
+    <!-- ---------------HTML學習內容------------------------------ -->
+   
+    <br/><br/>
+    <hr/>
+    <br/><br/><br/>
+    <h2>HTML學習總覽：</h2>
+    <!-- <div style="background-color: rgb(95, 160, 117);"> -->
+      <img src="/w3c/HTML學習目標心智圖.png" style="width:50%;border: solid black 0.5px;"/>
+        <br/>
+          <!-- <p>網頁架構</p> -->
+          <!-- <p>&lt;h1-6&gt; & &lt;p&gt; 標籤</p> -->
+          <!-- <p>&lt;b&gt;,&lt;i&gt;,&lt;u&gt; 標籤</p> -->
+          <!-- <p>&lt;br&gt;,&lt;hr&gt;標籤</p> -->
+          <!-- <p>註釋</p> -->
+          <!-- <p>&lt;div&gt;,&lt;span&gt;標籤</p> -->
+          <!-- <p>插入CSS</p> -->
+          <!-- <p>插入Javascript</p> -->
+          <!-- <br/>  -->
+    <!-- </div>  -->
+    <br/><br/><br/>
+    <hr/>
+    <br/><br/><br/>
+
+        <h2 style="font-size:30px"><b>1. 網頁架構</b></h2>
+        <br/>
+        <img src="/w3c/螢幕擷取畫面 2021-12-23 010139.png" style="width: 70%;"></img>
+
+        <div style="background-color: #e7f3fe;border-left: 6px solid #2196F3;margin:70px;font-size:20px;">
+          <b><p><i style="color: gray;font-size: 30px;">&ensp;Tips!</i></p>
+          <p>&ensp;基本架構不需要一個一個打 ! ! ! </br>&ensp;在VS Code中，在新增的html檔案中按下 "<b style="color: red;">&ensp;!</b>&ensp;"，再按下Enter，就會跑出基本架構。</p></b>
+        </div>
+
+        <br/><br/>
+        <hr/>
+        <br/><br/><br/>
+
+        <h2 style="font-size: 30px;">&nbsp;<b>2. </b><b style="background-color: yellow;">h1-h6 標籤 </b>
+          & <b style="background-color: yellow;">p標籤</b></h2>
+
+        </br>
+        <h3>h1-h6標籤：</h3>
+        <img src="/w3c/h1-h6程式.png" style="width: 30%;margin-bottom: 40px;margin-right:40px;"></img>
+        <img src="/w3c/h1-h6網頁.png" style="width: 30%;border: black solid 0.1px;"></img>
+
+        <div style="background-color: #e7f3fe;border-left: 6px solid #2196F3;margin:70px;font-size:20px;">
+        <b><p style="color:blue">&ensp;h1-h6標籤：標題(heading)</p>
+        <p style="color:red">數字1-6為分類，非區分大小用途</p></b>
+        </div>
+      </br>
+      <h3>h標籤v.s. p標籤：</h3>
+      <img src="/w3c/h v.s. p標籤.png" style="width: 30%;margin-bottom: 40px;margin-right:40px;border: black solid 0.1px;"></img>
+
+      <div style="background-color: #e7f3fe;border-left: 6px solid #2196F3;margin:70px;font-size:20px;">
+        <b><p style="color:blue">&ensp; p標籤：段落(paragraphs)</p>
+        <p style="color:red">  (不是標題性質，字體也非最小)
+        </p></b>
+      </div>
+
+      <br/><br/>
+      <hr/>
+      <br/><br/><br/>
+
+      <h2 style="font-size: 30px;">&nbsp;<b>3. </b><b style="background-color: yellow;">b標籤</b>
+        & <b style="background-color: yellow;">i標籤</b>
+        & <b style="background-color: yellow;">u標籤</b></h2><br/>
+        <img src="/w3c/b,i,u標籤程式.png" style="width:30%;margin-right:23px;margin-bottom: 40px;"></img>
+        <img src="/w3c/b,i,u標籤網頁.png" style="width:20%;margin-bottom: -20px;border: black solid 0.1px;"></img>
+
+        <div style="background-color: #e7f3fe;border-left: 6px solid #2196F3;margin:70px;font-size:20px;">
+          <b><p style="color:blue">&ensp; b標籤：粗體</p>
+          <p style="color:blue">i標籤：斜體</p>
+          <p style="color:blue">u標籤：加底線</p></b>
+        </div>
+      </br>
+
+      <br/><br/>
+      <hr/>
+      <br/><br/><br/>
+
+      <h2 style="font-size: 30px;">&nbsp;<b>4. </b><b style="background-color: yellow;">br標籤</b>
+        & <b style="background-color: yellow;">hr標籤</b></h2><br/>
+        <img src="/w3c/br,hr程式.png" style="width:30%;margin-right:23px;margin-bottom: 40px;"></img>
+        <img src="/w3c/br,hr網頁.png" style="width: 50%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+
+      <br/><br/>
+      <hr/>
+      <br/><br/><br/>
+
+      <h2 style="font-size: 30px;">&nbsp;<b>5. </b><b style="background-color: yellow;">HTML註釋</b></h2>
+      <h3>註釋功能：瀏覽器不會顯示註釋，所以可以放在HTML代碼中用來通知和提醒或是隱藏內容。</h3><br/><br/>
+      <img src="/w3c/註釋程式.png" style="width:30%;margin-right:23px;margin-bottom: 40px;"></img>
+      <img src="/w3c/註釋網頁.png" style="width: 30%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+
+      <div style="background-color: #e7f3fe;border-left: 6px solid #2196F3;margin:70px;font-size:20px;">
+        <b><p><i style="color: gray;font-size: 30px;">&ensp;Tips!</i></p>
+        <p>&ensp;程式碼不需用逐字打 ! ! ! </br>&ensp;在HTML檔案中按下 "<b style="color: red;">&ensp;Ctrl+ /鍵</b>&ensp;"程式碼就會轉為註釋。</p></b>
+      </div>
+
+      <br/><br/>
+      <hr/>
+      <br/><br/><br/>
+      <h2 style="font-size: 30px;">&nbsp;<b>6. </b><b style="background-color: yellow;">div 標籤 </b>
+        & <b style="background-color: yellow;">span標籤</b></h2>
+        <h3>div標籤：佔據網頁的全部寬度。</h3>
+        <h3>span標籤：只佔用必要的寬度。</h3><br/><br/>
+        <img src="/w3c/div span標籤程式.png" style="width:50%;margin-right:23px;margin-bottom: 40px;"></img>
+        <img src="/w3c/div span標籤網頁.png" style="width: 40%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+
+        <br/><br/>
+        <hr/>
+        <br/><br/><br/>
+
+        <h2 style="font-size:30px"><b>7. 插入CSS</b></h2>
+        <br/>
+        <h3>方法一：直接在HTML標籤後加入&lt;style&gt;屬性。</h3>
+        <img src="/w3c/插入CSS方法一程式.png" style="width:40%;margin-right:23px;margin-bottom: 40px;"></img>
+        <img src="/w3c/插入CSS方法一網頁.png" style="width:30%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+        <br/><br/>
+        <h3>方法二：在HTML裡面加入&lt;style&gt;標籤。</h3>
+        <img src="/w3c/插入CSS方法二程式.png" style="width:30%;margin-right:23px;margin-bottom: 40px;"></img>
+        <img src="/w3c/插入CSS方法二網頁.png" style="width:35%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+        <br/><br/>
+        <h3>方法三：在HTML裡面用&lt;link&gt;標籤插入CSS檔案。</h3>
+        <img src="/w3c/插入CSS方法三程式.png" style="width:50%;margin-right:23px;margin-bottom: 40px;"></img>
+        <img src="/w3c/插入CSS方法三網頁.png" style="width:35%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+
+        <br/><br/>
+        <hr/>
+        <br/><br/><br/>
+        
+        <h2 style="font-size:30px"><b>8. 插入Javascript</b></h2>
+        <br/>
+        <h3>方法一：在HTML裡面加入&lt;script&gt;標籤。</h3>
+        <img src="/w3c/插入Javascript方法一程式.png" style="width:45%;margin-right:23px;margin-bottom: 40px;"></img>
+        <img src="/w3c/插入Javascript方法一網頁.png" style="width:35%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+        <br/><br/>
+        <h3>方法二：在HTML裡面用&lt;link&gt;標籤插入js檔案。</h3>
+        <img src="/w3c/插入Javascript方法二-total.png" style="width:45%;margin-right:23px;margin-bottom: 40px;"></img>
+        <img src="w3c/插入Javascript方法二網頁.png" style="width:35%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+
+        <br/><br/>
+        <hr/>
+        <br/><br/><br/>
+        <h2 style="font-size:30px"><b>學習心得：</b></h2>
+        <h3>剛開始學習HTML的架構認為較為複雜，需要花時間去理解。而理解後則需依靠練習語法以及標籤以熟悉它的用法。</h3>
+
+        <br/><br/><br/>
+  </div>
+</div>
+
+  <!-- ------------------CSS--------------------------- -->
+
+<div id="html1" style="background-color:rgb(255, 255, 255);text-align: center;">  
+  <div id="CSS" class="link" style="display:none;padding:20px;background-color:rgb(255, 255, 255)">
+    <h1 style="margin: 3%;font-size: 300%;">CSS</h1>
+      <br/>
+
+      <!-- ---------------CSS簡介------------------------------ -->
+        <hr/>
+        <h2>CSS簡介：</h2>
+        <div style="background-color: cadetblue;">
+          <br/>
+          <p style="font-size: 20px;">CSS 是Cascading Style Sheets 的縮寫，是一種用來豐富網頁內容的語言。</p>
+          <br/>
+        </div>
+
+    <!-- --------------CSS學習內容------------------ -->
+
+      <br/><br/>
+      <hr/>
+      <br/><br/><br/>
+      <h2>CSS學習總覽：</h2>
+      <img src="/w3c/CSS學習目標心智圖.png" style="width:50%;border: solid black 0.5px;"/>
+      <br/><br/>
+
+      <br/><br/><br/>
+      <hr/>
+      <br/><br/><br/>
+  
+      <h2 style="font-size:30px"><b>1. 顏色</b></h2>
+      <h3>在 CSS 中，可以使用 <u>RGB 值</u>、<u>HEX 值</u>、<u>HSL 值</u>等來指定顏色</h3><br/><br/>
+      <h3>(1) 編輯文字顏色</h3><br/>
+      <img src="/w3c/CSS顏色程式.png" style="width:50%;margin-right:33px;margin-bottom: 40px;"></img>
+      <img src="/w3c/CSS顏色網頁.png" style="width:30%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+      <br/><br/>
+      <h3>(2) 編輯背景顏色：background-color</h3><br/>
+      <img src="/w3c/CSS顏色-2程式.png" style="width:50%;margin-right:33px;margin-bottom: 40px;"></img>
+      <img src="/w3c/CSS顏色-2網頁.png" style="width:35%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+
+        <br/><br/><br/>
+        <hr/>
+        <br/><br/><br/>
+
+      <h2 style="font-size:30px"><b>2. 邊框(border)</b></h2>
+      <h3>邊框可以設定的項目有三個：<u>寬度</u>、<u>屬性</u>、<u>顏色</u></h3><br/><br/>
+      <h3>(1) 寬度</h3><br/>
+      <img src="/w3c/CSS border-1 程式.png" style="width:50%;margin-right:33px;margin-bottom: 40px;"></img>
+      <img src="/w3c/CSS border-1 網頁.png" style="width:35%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+      <br/><br/><br/>
+      <h3>(2) 屬性</h3>
+
+      <br/>
+      <img src="/w3c/CSS border-2程式.png" style="width:50%;margin-right:33px;margin-bottom: 40px;"></img>
+      <img src="/w3c/CSS border-2網頁.png" style="width:35%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+      
+      <div style="background-color: #e7f3fe;border-left: 6px solid #2196F3;width:50%;margin-left: 30%;font-size:20px;">
+        <b><p style="color:blue">&ensp; solid：實線</p>
+        <p style="color:blue">dashed：虛線</p></b>
+      </div>
+    </br>
+
+      <br/><br/><br/>
+      <h3>(3) 顏色</h3><br/>
+      <img src="/w3c/CSS border-3程式.png" style="width:50%;margin-right:33px;margin-bottom: 40px;"></img>
+      <img src="/w3c/CSS border-3網頁.png" style="width:35%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+
+      <br/><br/><br/>
+      <hr/>
+      <br/><br/><br/>
+
+      <h2 style="font-size:30px"><b>3. </b><b style="background-color: yellow;">font-size屬性</b></h2>
+      <h3>font-size屬性用於設置文字的大小</h3><br/>
+      <img src="/w3c/CSS font-size程式.png" style="width:45%;margin-right:33px;margin-bottom: 40px;"></img>
+      <img src="/w3c/CSS font-size網頁.png" style="width:25%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+
+      <br/><br/><br/>
+      <hr/>
+      <br/><br/><br/>
+
+      <h2 style="font-size:30px"><b>4. </b><b style="background-color: yellow;">text-align屬性</b></h2>
+      <h3>text-align屬性用於設置文字在網頁的位置</h3><br/>
+      <img src="/w3c/CSS text-alien程式.png" style="width:45%;margin-right:33px;margin-bottom: 40px;"></img>
+      <img src="/w3c/CSS text-alien網頁.png" style="width:35%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+
+      <br/><br/><br/>
+      <hr/>
+      <br/><br/><br/>
+
+      <h2 style="font-size:30px"><b>5. </b><b style="background-color: yellow;">margin</b><b>屬性&</b><b style="background-color: yellow">padding</b><b>屬性</b></h2>
+      <br/><br/>
+      <h3>margin屬性：用於在元素周圍創建空間</h3><br/>
+
+    <img src="/w3c/CSS margin程式.png" style="width:30%;margin-right:33px;margin-bottom: 40px;"></img>
+    <img src="/w3c/CSS margin網頁.png" style="width:45%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+
+    <div style="background-color: #e7f3fe;border-left: 6px solid #2196F3;margin-left: 30%;margin-right:30% ;font-size:20px;">
+      <b>
+      <p style="color:black">&ensp; margin屬性可以指定特定範圍：</p>
+      <p style="color:blue">&ensp; margin-top</p>
+      <p style="color:blue">margin-right</p>
+      <p style="color:blue">margin-bottom</p>
+      <p style="color:blue">margin-left</p></b>
+    </div>
+  </br>
+
+  <br/><br/>
+  <h3>padding屬性：用於在邊界內元素創建空間</h3><br/>
+  <img src="/w3c/CSS padding程式.png" style="width:30%;margin-right:33px;margin-bottom: 40px;"></img>
+  <img src="/w3c/CSS padding網頁.png" style="width:45%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+
+  <div style="background-color: #e7f3fe;border-left: 6px solid #2196F3;margin-left: 30%;margin-right:30% ;font-size:20px;">
+    <b>
+    <p style="color:black">&ensp; padding屬性可以指定特定範圍：</p>
+    <p style="color:blue">&ensp; padding-top</p>
+    <p style="color:blue">padding-right</p>
+    <p style="color:blue">padding-bottom</p>
+    <p style="color:blue">padding-left</p></b>
+  </div>
+</br>
+
+    <br/><br/><br/>
+    <hr/>
+    <br/><br/><br/>
+
+      <h2 style="font-size:30px"><b>6. </b><b style="background-color: yellow;">height</b><b>屬性&</b><b style="background-color: yellow">width</b><b>屬性</b></h2>
+      <br/><br/>
+      <h3>height屬性：用於設置元素的高度</h3><br/>
+      <img src="/w3c/CSS height程式.png" style="width:30%;margin-right:33px;margin-bottom: 40px;"></img>
+      <img src="/w3c/CSS height網頁.png" style="width:45%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+
+      <br/><br/><br/>
+
+      <h3>width屬性：用於設置元素的寬度</h3><br/>
+      <img src="/w3c/CSS weight程式.png" style="width:30%;margin-right:33px;margin-bottom: 40px;"></img>
+      <img src="/w3c//CSS weight網頁.png" style="width:45%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+
+      <br/><br/><br/>
+      <hr/>
+      <br/><br/><br/>
+
+      <h2 style="font-size:30px"><b>學習心得：</b></h2>
+      <h3>CSS相較於HTML的學習方向大不同，但在學習過程中對於成果展示覺得較為有趣及多元。</h3>
+
+      <br/><br/><br/>
+  </div>
+</div>
+
+  <!-- ------------------Javascript--------------------------- -->
+
+<div id="html1" style="background-color:rgb(255, 255, 255);text-align: center;">  
+  <div id="Javascript" class="link" style="display:none;padding:20px;background-color:rgb(255, 255, 255)">
+    <h1 style="margin: 3%;font-size: 300%;">Javascript</h1>
+    <br/>
+
+    <!-- ---------------Javascript簡介------------------------------ -->
+    <hr/>
+    <h2>Javascript簡介：</h2>
+    <div style="background-color: cadetblue;">
+        <br/>
+        <p style="font-size: 20px;">Javascript可以用於在網站裡加入互動功能的程式語言。
+        </p>
+        <br/>
+    </div>
+    <br/><br/>
+    <hr/>
+    <br/>
+    <!-- ----------------Javascript學習內容----------------------------- -->
+  
+    <br/>
+      <br/>
+      <h2>Javascript學習總覽：</h2>
+      <img src="/w3c/Javascript學習目標心智圖.png" style="width:50%;border: solid black 0.5px;"/>
+        <br/> 
+
+      <br/><br/>
+      <hr/>
+    <br/><br/><br/>
+
+    <h2 style="font-size:30px"><b>1. 輸出</b></h2>
+    <br/>
+    <!-- <h3>使用document.write()直接在HTML檔案中標籤後加入&lt;javascript&gt;標籤。</h3> -->
+    <img src="/w3c/js 輸出程式.png" style="width:40%;margin-right:23px;margin-bottom: 40px;"></img>
+    <img src="/w3c/js 輸出網頁.png" style="width:30%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+    
+    <div style="background-color: #e7f3fe;border-left: 6px solid #2196F3;margin:10px;font-size:20px;">
+      <b><p>&ensp; Javascript輸出方式：</p><p  style="color:blue">使用 document.write()</p></b>
+    </div>
+
+    <br/><br/>
+    <hr/>
+    <br/><br/><br/>
+
+    <h2 style="font-size:30px"><b>2. 變量</b></h2>
+    <h3>&ensp;變量可用來存儲數據。</h3>
+    <img src="/w3c/js 變量程式.png" style="width:40%;margin-right:23px;margin-bottom: 40px;"></img>
+    <img src="/w3c/js 變量網頁.png" style="width:35%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+
+    <br/><br/>
+    <hr/>
+    <br/><br/><br/>
+
+    <h2 style="font-size:30px"><b>3. 註釋</b></h2>
+    <img src="/w3c/js 註釋程式.png" style="width:40%;margin-right:23px;margin-bottom: 40px;"></img>
+    <img src="/w3c/js 註釋網頁.png" style="width:35%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+
+    <div style="background-color: #e7f3fe;border-left: 6px solid #2196F3;margin:10px;font-size:20px;">
+      <b><p>&ensp; Javascript註釋：</p><p  style="color:blue">輸入"<b>//</b>"即可將整行程式碼變成註釋</p></b>
+    </div>
+
+    <br/><br/>
+    <hr/>
+    <br/><br/><br/>
+
+    <h2 style="font-size:30px"><b>4. 函數</b></h2>
+    <img src="/w3c/js 函數程式.png" style="width:40%;margin-right:23px;margin-bottom: 40px;"></img>
+    <img src="/w3c/js 函數網頁.png" style="width:35%;margin-bottom: 50px;border: black solid 0.1px;"></img>
+    
+    <div style="background-color: #e7f3fe;border-left: 6px solid #2196F3;margin:10px;font-size:20px;">
+      <b><p>&ensp; Javascript函數用法：</p><p  style="color:blue">Javascript的函數為"<b>function</b>"後面加一個名字以及括號()</p></b>
+    </div>
+
+    <br/><br/>
+    <hr/>
+    <br/><br/><br/>
+
+    <h2 style="font-size:30px"><b>學習心得：</b></h2>
+    <h3>Javascript的語法與使用方法與HTML和CSS較為不同，所以需要花時間始應以及練習。</h3>
+
+    <br/><br/><br/>
+
+  </div>
+</div>
+
+    <!-- ------------------學習歷程--------------------------- -->
+
+<div id="html1" style="background-color:rgb(255, 255, 255);text-align: center;">  
+    <div id="學習歷程" class="link" style="display:none;padding:20px;">
+      <h1 style="margin: 3%;">學習歷程</h1>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+</div>
+
+    <!-- -------------------舊版網頁-------------------------- -->
+
+<div id="html1" style="background-color:rgb(255, 255, 255);text-align: center;">      
+    <div id="舊版網頁" class="link" style="display:none;padding:20px">
+      <h1 style="margin: 3%;">舊版網頁</h1>
+      <iframe src="正式1/index.html" name="iframe_a" height="600px" width="100%" title="Iframe Example"></iframe>
+    </div>
+</div>
+
+    <!-- --------------------------------------------- -->
+
+</body> 
+</html>
